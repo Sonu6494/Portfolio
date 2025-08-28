@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonu Kumar - Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="src/logo.png">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">SK</a>
+            <button class="hamburger-menu" id="hamburgerMenu" aria-label="Open navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><button class="close-menu" id="closeMenu" aria-label="Close navigation menu">&times;</button></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="theme-toggle" onclick="toggleTheme()">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text fade-in">
+                        <h1>Sonu Kumar</h1>
+                        <p class="subtitle">Full Stack Developer</p>
+                        <p class="summary">
+                            Passionate Computer Science Engineering student with expertise in full-stack web
+                            development,
+                            mobile app development, and modern technologies. Experienced in building scalable
+                            applications
+                            with React, Node.js, and MongoDB. Always eager to learn new technologies and solve complex
+                            problems.
+                        </p>
+                        <div class="cta-buttons">
+                            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                            <a href="#projects" class="btn btn-outline">View Projects</a>
+                            <a href="src/resume.pdf" target="_blank" class="btn btn-outline">View Resume</a>
+                        </div>
+                    </div>
+                    <div class="profile-image fade-in">
+                        <img src="src/profile.webp" alt="Sonu Kumar">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">Education</h2>
+                <div class="education-grid">
+                    <div class="education-item fade-in">
+                        <h3>Bachelor of Technology - Computer Science and Engineering</h3>
+                        <p class="institution">Giani Zail Singh College Campus Of Engineering And Technology</p>
+                        <p class="details">Bathinda, Punjab • CGPA: 7.5 • 2021 - 2025</p>
+                    </div>
+                    <div class="education-item fade-in">
+                        <h3>Senior Secondary (Class XII)</h3>
+                        <p class="institution">Lord Rama Public School</p>
+                        <p class="details">Bathinda, Punjab • CBSE • 83.2% • 2020 - 2021</p>
+                    </div>
+                    <div class="education-item fade-in">
+                        <h3>Secondary (Class X)</h3>
+                        <p class="institution">M.H.R Happy High School</p>
+                        <p class="details">Bathinda, Punjab • PSEB • 93.3% • 2018 - 2019</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category fade-in">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">C/C++</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                        </div>
+                    </div>
+                    <div class="skill-category fade-in">
+                        <h3>Frameworks & Libraries</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">React.js</span>
+                            <span class="skill-tag">Next.js</span>
+                            <span class="skill-tag">Express.js</span>
+                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">AngularJS</span>
+                        </div>
+                    </div>
+                    <div class="skill-category fade-in">
+                        <h3>UI Libraries</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Bootstrap</span>
+                            <span class="skill-tag">Tailwind CSS</span>
+                        </div>
+                    </div>
+                    <div class="skill-category fade-in">
+                        <h3>Databases</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">MySQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category fade-in">
+                        <h3>Tools & Technologies</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">Postman</span>
+                            <span class="skill-tag">MongoDB Compass</span>
+                            <span class="skill-tag">Android Studio</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card fade-in">
+                        <div class="project-header">
+                            <h3>Fund Collection Platform</h3>
+                            <p class="project-tech">React.js, Node.js, MongoDB, Next.js, Razorpay</p>
+                        </div>
+                        <div class="project-body">
+                            <ul class="project-features">
+                                <li>Created a donation campaign web app with real-time tracking</li>
+                                <li>Integrated Razorpay payment gateway for secure transactions</li>
+                                <li>Built scalable full-stack solution with user authentication</li>
+                                <li>Implemented dynamic campaign management features</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-card fade-in">
+                        <div class="project-header">
+                            <h3>E-Commerce Platform</h3>
+                            <p class="project-tech">Vue.js, Node.js, HTML, CSS, JavaScript</p>
+                        </div>
+                        <div class="project-body">
+                            <ul class="project-features">
+                                <li>Designed responsive e-commerce frontend using Vue.js</li>
+                                <li>Implemented dynamic product listings and shopping cart</li>
+                                <li>Built pricing sum calculator for enhanced user experience</li>
+                                <li>Optimized UI for seamless navigation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-card fade-in">
+                        <div class="project-header">
+                            <h3>Music Player App</h3>
+                            <p class="project-tech">Java, XML, Android Studio</p>
+                        </div>
+                        <div class="project-body">
+                            <ul class="project-features">
+                                <li>Developed functional music player with full controls</li>
+                                <li>Utilized Android MediaPlayer API for audio playback</li>
+                                <li>Implemented background service support</li>
+                                <li>Created clean UI following Android design guidelines</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">Experience</h2>
+                <div class="experience-timeline">
+                    <div class="experience-item fade-in">
+                        <h3>IT Intern</h3>
+                        <p class="company">InfoWiz Software Solutions</p>
+                        <p class="duration">June 2024 - August 2024</p>
+                        <ul>
+                            <li>Built full-stack web applications using React.js, Next.js, and MongoDB</li>
+                            <li>Developed responsive web-based systems with modern technologies</li>
+                            <li>Deployed Fund Collection platform with Razorpay API integration</li>
+                            <li>Gained experience in real-time functionality implementation</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item fade-in">
+                        <h3>Summer Training</h3>
+                        <p class="company">Solitaire Infosys Pvt. Ltd., Mohali, Punjab</p>
+                        <p class="duration">June 2023 - July 2023</p>
+                        <ul>
+                            <li>Developed Android applications including Food Delivery System</li>
+                            <li>Customized app views based on real client feedback</li>
+                            <li>Gained hands-on experience with Android SDK and UI design</li>
+                            <li>Learned mobile app deployment and testing procedures</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">Get In Touch</h2>
+                <form class="contact-form fade-in" onsubmit="sendEmail(event)">
+                    <div class="success-message" id="successMessage">
+                        Thank you! Your message has been sent successfully.
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Sonu Kumar. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="mailto:sonukumar2323sonu@gmail.com" title="Email">✉️</a>
+                    <a href="tel:+919780796494" title="Phone">📞</a>
+                    <a href="https://linkedin.com/in/sonu-kumar-b50759239" title="LinkedIn" target="_blank">💼</a>
+                    <a href="https://github.com/sonu6494" title="GitHub" target="_blank">🐱</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
